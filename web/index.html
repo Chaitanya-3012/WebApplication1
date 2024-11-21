@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body class="banner">
+    <div class="container">
+      <h1>Welcome to <span>Sweet Crust</span>!!!</h1>
+    </div>
+
+    <div class="login-box">
+      <h2>Login</h2>
+
+      <form action="login" method="post">
+        <div class="user-box">
+          <input type="text" name="username" required="" placeholder=""/>
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required="" />
+          <label>Password</label>
+        </div>
+        <div class="button-form">
+          <button type="submit" id="submit">Submit</button>
+
+          <div id="register">
+            Don't have an account ?
+            <a href="SignUp.html">Register</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

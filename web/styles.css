@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+
+:root {
+    --welcomeFont: "Playwrite IS", sans-serif;
+}
+body{
+    background-color: #ffebcd;
+}
+nav {
+    background-color: #622c00;
+    color: aliceblue;
+    height: 9vh;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-left: 30vw;
+    margin-right: 7vw;
+    margin-top: -13vh;
+}
+
+li {
+    font-size: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.title{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    font-family: var(--welcomeFont);
+    font-size: 2.8rem;
+    color: #deb887;
+    margin-top: -1vh;
+}
+.welcome {
+    background-image: linear-gradient(#989898af, #989898af), url(images/specialBG.jpg);
+    background-size: cover;
+    background-color: #713232;
+    height: 90vh;
+}
+
+.content {
+    margin-bottom: -5vh;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #ffd91b;
+    font-family: var(--welcomeFont);
+    background-color: #0000007e;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.specialCards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: center;
+}
+
+#cake {
+    background-image: linear-gradient(#989898af, #989898af), url(images/cakeBG.jpg);
+    background-size: cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#donut {
+    background-image: linear-gradient(#989898af, #989898af), url(images/DonatBG.jpg);
+    background-size: cover;
+    background-color: cadetblue;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bread {
+    background-image: linear-gradient(#989898af, #989898af), url(images/breadBG.jpg);
+    background-size: cover;
+    background-color: chocolate;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pastry {
+    background-image: linear-gradient(#989898ab, #989898af), url(images/pastryBG.jpg);
+    background-size: cover;
+    background-color: cornflowerblue;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-card {
+    margin-top: 35vh;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #00000082;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 375px;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.quantity button {
+    border-radius: 30%;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity input {
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.product-card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}

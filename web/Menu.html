@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <p class="title">Sweet Crust</p>
+      <ul>
+        <a href="#cake"><li>Cakes</li></a>
+        <a href="#donut"><li>Donuts</li></a>
+        <a href="#bread"><li>Breads</li></a>
+        <a href="#pastry"><li>Pastries</li></a>
+        <a href="index.html"><li>Logout</li></a>
+        <a href="http://localhost:9090/WebApplication1/dispatch"><li>Cart</li></a>
+      </ul>
+    </nav>
+    <!-- Welcome Page -->
+    <div class="welcome">
+      <p class="content">Try our Special</p>
+      <div class="specialCards">
+        <div class="product-card">
+        <form action="cart" method="post">
+            <img src="images/Chocolate Swiss Rolls.jpg" />
+            <h2 class="product-name">Chocolate Swiss Roll</h2>
+            <p class="product-price">Rs.100</p>
+            <div class="quantity">
+              <button type="button" onclick="decrement('quantity1')">-</button>
+              <input
+                type="text"
+                id="quantity1"
+                name="quantity"
+                value="0"
+                readonly
+              />
+              <button type="button" onclick="increment('quantity1')">+</button>
+            </div>
+            <input type="hidden" value="Chocolate Swiss Roll" name="product" />
+            <input type="hidden" value="100" name="price" />
+            <button class="add-to-cart" type="submit">Add to Cart</button>
+          </form>
+          </div>
+
+        <div class="product-card">
+            <form action="cart" method="post">
+            <img src="images/sugar-free-chocolate-chip-cookies.jpg" />
+            <h2 class="product-name">Sugar Free Cookies</h2>
+            <p class="product-price">Rs.320</p>
+            <div class="quantity">
+              <button type="button" onclick="decrement('quantity2')">-</button>
+              <input
+                type="text"
+                id="quantity2"
+                name="quantity"
+                value="0"
+                readonly
+              />
+              <button type="button" onclick="increment('quantity2')">+</button>
+            </div>
+            <input type="hidden" value="Sugar Free Cookies" name="product" />
+            <input type="hidden" value="320" name="price" />
+            <button class="add-to-cart" type="submit">Add to Cart</button>
+          </form>
+          </div>
+
+        <div class="product-card">
+            <form action="cart" method="post">
+            <img src="images/Wild-Blueberry-Muffins.jpg" />
+            <h2 class="product-name">Blueberry Muffins</h2>
+            <p class="product-price">Rs.120</p>
+            <div class="quantity">
+              <button type="button" onclick="decrement('quantity3')">-</button>
+              <input
+                type="text"
+                id="quantity3"
+                name="quantity"
+                value="0"
+                readonly
+              />
+              <button type="button" onclick="increment('quantity3')">+</button>
+            </div>
+            <input type="hidden" value="Blueberry Muffins" name="product" />
+            <input type="hidden" value="120" name="price" />
+            <button class="add-to-cart" type="submit">Add to Cart</button>
+          </form>
+          </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- #Cake -->
+
+    <div id="cake">
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/truffle chocolate cake.jpeg" />
+          <h2 class="product-name">Truffle Chocolate Cake</h2>
+          <p class="product-price">Rs.300</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity4')">-</button>
+            <input
+              type="text"
+              id="quantity4"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity4')">+</button>
+          </div>
+          <input type="hidden" value="TruffleChocolate Cake" name="product" />
+          <input type="hidden" value="300" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/rasmalai cake.jpeg" />
+          <h2 class="product-name">Rasmalai Cake</h2>
+          <p class="product-price">Rs.400</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity5')">-</button>
+            <input
+              type="text"
+              id="quantity5"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity5')">+</button>
+          </div>
+          <input type="hidden" value="Rasmalai Cake" name="product" />
+          <input type="hidden" value="400" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/strawberry cake.jpeg" />
+          <h2 class="product-name">Strawberry Cake</h2>
+          <p class="product-price">Rs.250</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity6')">-</button>
+            <input
+              type="text"
+              id="quantity6"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity6')">+</button>
+          </div>
+          <input type="hidden" value="Strawberry Cake" name="product" />
+          <input type="hidden" value="250" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <!-- #Donut -->
+
+    <div id="donut">
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/blueberry donut.jpeg" />
+          <h2 class="product-name">Blueberry Donut</h2>
+          <p class="product-price">Rs.150</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity7')">-</button>
+            <input
+              type="text"
+              id="quantity7"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity7')">+</button>
+          </div>
+          <input type="hidden" value="Blueberry Donut" name="product" />
+          <input type="hidden" value="150" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/chocolate chip donut.jpeg" />
+          <h2 class="product-name">Chocolate Chip Donut</h2>
+          <p class="product-price">Rs.120</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity8')">-</button>
+            <input
+              type="text"
+              id="quantity8"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity8')">+</button>
+          </div>
+          <input type="hidden" value="Chocolate Chip Donut" name="product" />
+          <input type="hidden" value="120" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/Vanilla Donuts.jpg" />
+          <h2 class="product-name">Vanilla Donut</h2>
+          <p class="product-price">Rs.100</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity9')">-</button>
+            <input
+              type="text"
+              id="quantity9"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity9')">+</button>
+          </div>
+          <input type="hidden" value="Vanilla Donut" name="product" />
+          <input type="hidden" value="100" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+    <!-- #Bread -->
+
+    <div id="bread">
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/brwon bread.jpeg" />
+          <h2 class="product-name">Brown Bread</h2>
+          <p class="product-price">Rs.45</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity10')">-</button>
+            <input
+              type="text"
+              id="quantity10"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity10')">+</button>
+          </div>
+          <input type="hidden" value="Brown Bread" name="product" />
+          <input type="hidden" value="45" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/garlic bread.jpeg" />
+          <h2 class="product-name">Garlic Bread</h2>
+          <p class="product-price">Rs.50</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity11')">-</button>
+            <input
+              type="text"
+              id="quantity11"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity11')">+</button>
+          </div>
+          <input type="hidden" value="Garlic Bread" name="product" />
+          <input type="hidden" value="50" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/croissant.jpeg" />
+          <h2 class="product-name">Croissant</h2>
+          <p class="product-price">Rs.80</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity12')">-</button>
+            <input
+              type="text"
+              id="quantity12"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity12')">+</button>
+          </div>
+          <input type="hidden" value="Croissant" name="product" />
+          <input type="hidden" value="80" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- #Pastry -->
+
+    <div id="pastry">
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/Pinapple p..png" />
+          <h2 class="product-name">Pineapple Pastry</h2>
+          <p class="product-price">Rs.25</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity13')">-</button>
+            <input
+              type="text"
+              id="quantity13"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity13')">+</button>
+          </div>
+          <input type="hidden" value="Pineapple Pastry" name="product" />
+          <input type="hidden" value="25" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/Red velvet p..png" />
+          <h2 class="product-name">Red Velvet Pastry</h2>
+          <p class="product-price">Rs.30</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity14')">-</button>
+            <input
+              type="text"
+              id="quantity14"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity14')">+</button>
+          </div>
+          <input type="hidden" value="Red Velvet Pastry" name="product" />
+          <input type="hidden" value="30" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+      <form action="cart" method="post">
+        <div class="product-card">
+          <img src="images/Black forest P.png" />
+          <h2 class="product-name">Black Forest Pastry</h2>
+          <p class="product-price">Rs.40</p>
+          <div class="quantity">
+            <button type="button" onclick="decrement('quantity15')">-</button>
+            <input
+              type="text"
+              id="quantity15"
+              name="quantity"
+              value="0"
+              readonly
+            />
+            <button type="button" onclick="increment('quantity15')">+</button>
+          </div>
+          <input type="hidden" value="Black Forest Pastry" name="product" />
+          <input type="hidden" value="40" name="price" />
+          <button class="add-to-cart" type="submit">Add to Cart</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      function increment(id) {
+        let quantityInput = document.getElementById(id);
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+      }
+
+      function decrement(id) {
+        let quantityInput = document.getElementById(id);
+        if (quantityInput.value >= 1) {
+          quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+      }
+    </script>
+  </body>
+</html>
